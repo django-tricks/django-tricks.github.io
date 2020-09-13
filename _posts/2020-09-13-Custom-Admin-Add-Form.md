@@ -55,3 +55,5 @@ class FooAdmin(admin.ModelAdmin):
         return super().get_form(request, obj, **defaults)
 
 ```
+
+**Note:** This is a best practice. Django also uses this idea for custom user add form: [See django's source code](https://github.com/django/django/blob/0004daa/django/contrib/auth/admin.py#L72-L80)
